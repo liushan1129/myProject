@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: sample.data.jpa.SampleDataJpaApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 3.522 sec <<< FAILURE! - in sample.data.jpa.SampleDataJpaApplicationTests
+testJmx(sample.data.jpa.SampleDataJpaApplicationTests)  Time elapsed: 0.069 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expected size:<1> but was:<0> in:
+<[]>
+	at sample.data.jpa.SampleDataJpaApplicationTests.testJmx(SampleDataJpaApplicationTests.java:77)
+
+testHome(sample.data.jpa.SampleDataJpaApplicationTests)  Time elapsed: 0.023 sec  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$10.match(StatusResultMatchers.java:665)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at sample.data.jpa.SampleDataJpaApplicationTests.testHome(SampleDataJpaApplicationTests.java:69)
+
